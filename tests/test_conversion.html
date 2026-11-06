@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>转换功能测试文档</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-title {
+            background: #f0f0f0;
+            padding: 10px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 5px 5px 0 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML转换功能测试文档</h1>
+    
+    <div class="test-section">
+        <div class="test-title">测试1: 基本文本格式</div>
+        <p>这是普通段落文本。</p>
+        <p><strong>这是粗体文本</strong></p>
+        <p><em>这是斜体文本</em></p>
+        <p><u>这是下划线文本</u></p>
+        <p><del>这是删除线文本</del></p>
+    </div>
+    
+    <div class="test-section">
+        <div class="test-title">测试2: 标题层级</div>
+        <h1>一级标题</h1>
+        <h2>二级标题</h2>
+        <h3>三级标题</h3>
+        <h4>四级标题</h4>
+        <h5>五级标题</h5>
+        <h6>六级标题</h6>
+    </div>
+    
+    <div class="test-section">
+        <div class="test-title">测试3: 列表格式</div>
+        <h3>无序列表</h3>
+        <ul>
+            <li>第一项</li>
+            <li>第二项
+                <ul>
+                    <li>子项目1</li>
+                    <li>子项目2</li>
+                </ul>
+            </li>
+            <li>第三项</li>
+        </ul>
+        
+        <h3>有序列表</h3>
+        <ol>
+            <li>步骤一</li>
+            <li>步骤二</li>
+            <li>步骤三</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <div class="test-title">测试4: 表格</div>
+        <table border="1" style="border-collapse: collapse; width: 100%;">
+            <thead>
+                <tr>
+                    <th>列1</th>
+                    <th>列2</th>
+                    <th>列3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>数据1</td>
+                    <td>数据2</td>
+                    <td>数据3</td>
+                </tr>
+                <tr>
+                    <td>数据4</td>
+                    <td>数据5</td>
+                    <td>数据6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="test-section">
+        <div class="test-title">测试5: 代码块</div>
+        <p>行内代码: <code>console.log('Hello World')</code></p>
+        
+        <h3>代码块</h3>
+        <pre><code>#!/bin/bash
+echo "这是一个Shell脚本示例"
+for i in {1..5}; do
+    echo "循环第 $i 次"
+done</code></pre>
+    </div>
+    
+    <div class="test-section">
+        <div class="test-title">测试6: 引用块</div>
+        <blockquote>
+            <p>这是一个引用块的示例。引用块通常用于显示引用的文本或重要的说明信息。</p>
+            <p>— 引用来源</p>
+        </blockquote>
+    </div>
+    
+    <div class="test-section">
+        <div class="test-title">测试7: 链接</div>
+        <p>这是一个<a href="https://example.com">外部链接</a>的示例。</p>
+        <p>这是一个<a href="#test-section">内部链接</a>的示例。</p>
+    </div>
+    
+    <div class="test-section">
+        <div class="test-title">测试8: 特殊字符</div>
+        <p>HTML实体测试: &lt; &gt; &amp; &quot; &#39;</p>
+        <p>Unicode字符: © ® ™ € £ ¥</p>
+        <p>中文字符: 你好世界！这是中文测试。</p>
+        <p>数学符号: α β γ δ ∑ ∫ ∞ ≤ ≥ ≠</p>
+    </div>
+    
+    <div class="test-section">
+        <div class="test-title">测试9: 分隔线</div>
+        <p>上方内容</p>
+        <hr>
+        <p>下方内容</p>
+    </div>
+    
+    <div class="test-section">
+        <div class="test-title">测试10: 混合格式</div>
+        <p>这个段落包含<strong>粗体</strong>、<em>斜体</em>、<code>代码</code>和<a href="#">链接</a>的混合格式。</p>
+        
+        <ul>
+            <li><strong>重要项目</strong>: 包含粗体的列表项</li>
+            <li><em>强调项目</em>: 包含斜体的列表项</li>
+            <li><code>代码项目</code>: 包含代码的列表项</li>
+        </ul>
+    </div>
+    
+    <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #666;">
+        <p>测试文档结束 - 用于验证HTML转换功能的完整性</p>
+    </footer>
+</body>
+</html>

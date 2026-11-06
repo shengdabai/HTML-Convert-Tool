@@ -1,0 +1,39 @@
+{
+  "conversion_settings": {
+    "pdf_engine": "xelatex",
+    "margin": "1in",
+    "font_size": "12pt",
+    "preserve_html": false,
+    "standalone": true
+  },
+  "directories": {
+    "input_dir": "./input",
+    "output_dir": "./output",
+    "temp_dir": "./temp",
+    "logs_dir": "./logs"
+  },
+  "logging": {
+    "log_level": "INFO",
+    "log_file": "./logs/conversion.log",
+    "enable_progress": true
+  },
+  "formats": {
+    "pdf": {
+      "engine": "xelatex",
+      "options": [
+        "--pdf-engine=xelatex",
+        "-V geometry:margin=1in",
+        "-V fontsize=12pt",
+        "--standalone"
+      ]
+    },
+    "markdown": {
+      "variant": "gfm",
+      "options": [
+        "-f html",
+        "-t gfm",
+        "--wrap=preserve"
+      ]
+    }
+  }
+}
