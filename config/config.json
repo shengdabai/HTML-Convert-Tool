@@ -1,39 +1,38 @@
 {
-  "conversion_settings": {
-    "pdf_engine": "xelatex",
-    "margin": "1in",
+  "pdf": {
+    "engine": "xelatex",
+    "margin_top": "2cm",
+    "margin_bottom": "2cm", 
+    "margin_left": "2cm",
+    "margin_right": "2cm",
     "font_size": "12pt",
-    "preserve_html": false,
-    "standalone": true
+    "font_family": "SimSun",
+    "paper_size": "a4",
+    "toc": false,
+    "number_sections": false
   },
-  "directories": {
-    "input_dir": "./input",
-    "output_dir": "./output",
-    "temp_dir": "./temp",
-    "logs_dir": "./logs"
+  "markdown": {
+    "variant": "gfm",
+    "wrap": "auto",
+    "columns": 80,
+    "preserve_tabs": false,
+    "tab_stop": 4
+  },
+  "paths": {
+    "input_dir": "input",
+    "output_dir": "output", 
+    "temp_dir": "temp",
+    "log_dir": "logs"
   },
   "logging": {
-    "log_level": "INFO",
-    "log_file": "./logs/conversion.log",
-    "enable_progress": true
+    "level": "info",
+    "file": "logs/conversion.log",
+    "show_progress": true
   },
-  "formats": {
-    "pdf": {
-      "engine": "xelatex",
-      "options": [
-        "--pdf-engine=xelatex",
-        "-V geometry:margin=1in",
-        "-V fontsize=12pt",
-        "--standalone"
-      ]
-    },
-    "markdown": {
-      "variant": "gfm",
-      "options": [
-        "-f html",
-        "-t gfm",
-        "--wrap=preserve"
-      ]
-    }
+  "conversion": {
+    "overwrite_existing": false,
+    "create_subdirs": true,
+    "preserve_structure": true,
+    "batch_size": 10
   }
 }
